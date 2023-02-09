@@ -1,0 +1,23 @@
+{
+  "name": "die-karte-themes",
+  "version": "0.0.1",
+  "description": "The theme collection and a server who provides them to the main app",
+  "main": "src/server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:themes": "node --trace-uncaught ./build/build_themes.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiandarga/die-karte-themes.git"
+  },
+  "author": "Fabian Darga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabiandarga/die-karte-themes/issues"
+  },
+  "homepage": "https://github.com/fabiandarga/die-karte-themes#readme",
+  "dependencies": {
+    "sass": "^1.58.0"
+  }
+}
