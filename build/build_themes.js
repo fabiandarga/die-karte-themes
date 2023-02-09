@@ -2,8 +2,11 @@ const sass = require('sass');
 const fs = require('fs');
 const path = require('path');
 
-if (!fs.existsSync('dist')) {
-    fs.mkdirSync('dist');
+function createFolderIfNotExists(path) {
+    if (!fs.existsSync(path)) {
+        fs.mkdirSync(path);
+        console.log('Created folder: ' + path);
+    }
 }
 
 function compile(file, themeName) {
@@ -15,10 +18,13 @@ function compile(file, themeName) {
 
     const compressed = sass.compile(file, { style: 'compressed' });
    
-    fs.writeFile('dist/'+themeName+'.css', compressed.css, {}, () => {
-        console.log('Done writing: ' + 'dist/'+themeName+'.css');
+    createFolderIfNotExists('dist/'+themeName);
+    fs.writeFile('dist/'+themeName+'/main.css', compressed.css, {}, () => {
+        console.log('Done writing: ' + 'dist/'+themeName+'/main.css');
     });
 }
+
+createFolderIfNotExists('dist');
 
 fs.readdir('src/themes', { withFileTypes: true }, (err, files) => {
     files.forEach(element => {

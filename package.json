@@ -5,6 +5,7 @@
   "main": "src/server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/server/index.js",
     "build:themes": "node --trace-uncaught ./build/build_themes.js"
   },
   "repository": {
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/fabiandarga/die-karte-themes#readme",
   "dependencies": {
+    "express": "^4.18.2",
     "sass": "^1.58.0"
   }
 }
