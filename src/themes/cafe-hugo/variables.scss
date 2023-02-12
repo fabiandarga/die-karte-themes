@@ -1,0 +1,31 @@
+@forward "../../core/variables.scss" with (
+    $fontBody: ('Raleway', sans-serif), 
+    $fontTitle: ('Alta', sans-serif),
+    $fontColorTitle: #000000,
+    $fontColorBody: #000000,
+    $backgroundColor: #FFFFFF,  
+    $borderNavbarTop: 2px solid #000000, 
+    $borderNavbarBottom: 2px solid #000000,
+    
+      
+);
+
+@font-face {
+    font-family: 'Alta';
+    src: url('./fonts/Alta_Typeface/Alta_regular.otf');
+    
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'Alta';
+    src: url('./fonts/Alta_Typeface/Alta_caption.otf');
+    
+    font-weight:bold;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap'); 
+//@import url('./Alta_Typeface/Alta_light.otf');

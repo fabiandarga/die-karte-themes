@@ -1,0 +1,53 @@
+@use 'sass:color';
+
+$darkGrey: rgba(209, 213, 219, 0.3);
+$fontColorTitle: rgb(26, 26, 127) !default; 
+$fontColorBody: #000 !default;
+$header_logo_suffix_font:  Arial, sans-serif !default;
+$backgroundColor: #ffffff !default; 
+$body_backgroundColor: #2a2929 !default; 
+$fontTitle: Arial, sans-serif !default;
+$fontBody: Arial, sans-serif !default; 
+$descriptionColor: #606060 !default;  
+$borderNavbarTop: none !default; 
+$borderNavbarBottom: none !default;
+$socialMediaHover: black !default;
+$socialMediaActive: black !default;
+$margin: 1rem;
+$margin_lg: 1.5rem;
+$margin_xl: 2rem;
+
+$breakpoint_md: 836px;
+
+/*
+* Components
+*/
+$card_margin: 2em !default;
+
+/*
+ * Modules
+ */
+$header_background: $backgroundColor !default;
+$header_color: $fontColorBody !default;
+$header_logo_color: $fontColorTitle !default;
+$header_logo_font: $fontTitle !default;
+$header_logo_fontSize: 60px;
+$header_logo_fontSize_md: 48px;
+$header_hero_image: none !default;
+
+$category_title_fontSize: 32px !default;
+$category_title_margin: 2em 0 0.6em !default;
+
+$additives_title_fontSize: 26px !default;
+$additives_title_margin: 2em 0 0.6em !default;
+
+$item_title_fontSize: 18px !default;
+$item_title_fontWeight: 500 !default;
+
+$item_description_margin: 0.5em 1em 0 0 !default;
+$item_description_color: #C2C2C2 !default;
+$item_description_fontSize: 15px !default;  
+
+$social-media_link_color: $header_color;
+$social-media_link_color--hover: color.scale($header_color, $lightness: 15%);
+$social-media_link_color--active: color.scale($header_color, $lightness: 30%);

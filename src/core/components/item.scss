@@ -1,0 +1,17 @@
+@use '../variables.scss';
+
+.foodName {
+  font-size: variables.$item_title_fontSize;
+  font-weight: variables.$item_title_fontWeight;
+}
+
+.description {
+  color: variables.$item_description_color;
+  font-size: variables.$item_description_fontSize;
+  margin: variables.$item_description_margin;
+}
+
+.price {
+  font-size: variables.$item_title_fontSize;
+  font-weight: variables.$item_title_fontWeight;
+}

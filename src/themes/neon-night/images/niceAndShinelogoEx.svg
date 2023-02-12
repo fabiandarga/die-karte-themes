@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="300" height="200" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="filter42209" x="-.0044441" y="-.0083605" width="1.0089" height="1.0167" color-interpolation-filters="sRGB">
+            <feGaussianBlur stdDeviation="0.0024905373" />
+        </filter>
+        <filter id="filter41427" x="-.014458" y="-.027198" width="1.0289" height="1.0544" color-interpolation-filters="sRGB">
+            <feGaussianBlur stdDeviation="0.0024905373" />
+        </filter>
+        <filter id="filter37067" x="-.10172" y="-.19136" width="1.2034" height="1.3827" color-interpolation-filters="sRGB">
+            <feGaussianBlur stdDeviation="2.3626233" />
+        </filter>
+    </defs>
+    <g transform="scale(3.7795)">
+        <rect x="-1.7764e-15" width="79.375" height="52.917" />
+        <rect x="27.742" y="13.189" width="11.946" height="6.394" />
+        <g fill-opacity="0" font-family="sans-serif" font-size="17.198px" font-weight="bold" stroke-linecap="round" stroke-linejoin="round">
+            <text transform="matrix(1.0067 0 0 .99337 0 1.5875)" x="5.7338505" y="22.146551" fill="#4d4d4d" filter="url(#filter41427)" stroke="#4d4d4d" stroke-opacity=".21" stroke-width="1.865" xml:space="preserve">
+                <tspan x="5.7338505" y="22.146551">NICE &amp; </tspan>
+                <tspan x="5.7338505" y="43.643929">SHINY</tspan>
+            </text>
+            <g>
+                <text transform="scale(1.0067 .99337)" x="5.7338505" y="22.146551" fill="#d40000" filter="url(#filter37067)" stroke="#f3006e" stroke-width="1.865" xml:space="preserve">
+                     <animate
+                        attributeName="opacity"
+                        values="1;0"
+                        dur="1s"
+                        begin="light_1.begin" />
+                    <animate
+                        attributeName="opacity"
+                        values="0:1"
+                        dur="1s"
+                        begin="light_1.end" />
+                    <tspan x="5.7338505" y="22.146551">NICE &amp; </tspan>
+                    <tspan x="5.7338505" y="43.643929">SHINY</tspan>
+                </text>
+                <text transform="scale(1.0067 .99337)" x="5.7338505" y="22.146551" fill="#000000" filter="url(#filter41427)"
+                    stroke="#f931ae" stroke-width="1.865" xml:space="preserve">
+                    <animate
+                        id="light_1"
+                        attributeName="opacity"
+                        values="1;0"
+                        dur="1s"
+                        begin="0s;light_2.end+0.5s" />
+                    <animate
+                        id="light_2"
+                        attributeName="opacity"
+                        values="0:1"
+                        dur="1s"
+                        begin="light_1.end" />
+                    <tspan x="5.7338505" y="22.146551">NICE &amp; </tspan>
+                    <tspan x="5.7338505" y="43.643929">SHINY</tspan>
+                </text>
+                <text transform="scale(1.0067 .99337)" x="5.7338505" y="22.146551" fill="#000000" filter="url(#filter42209)" stroke="#f9e0e7" stroke-width=".565" xml:space="preserve">
+                    <tspan x="5.7338505" y="22.146551">NICE &amp;</tspan>
+                    <tspan x="5.7338505" y="43.643929">SHINY</tspan>
+                   
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

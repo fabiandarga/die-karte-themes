@@ -1,0 +1,56 @@
+// Used to write css overwrites.
+// Please try variables first.
+
+/*
+e.g.:
+.menu_content {
+    max-width: 1024px;
+    border: 2px dashed green;
+}
+*/  
+@use './variables.scss';
+@import "../../core/main.scss";
+
+$border-color: #d5d5d5;
+
+.AppContent {
+ background: url(/cafe-hugo/images/paper_bg.jpg);
+ background-attachment: fixed;
+}
+
+.heroImage {
+    height: 180px;
+}
+
+@media (min-width: variables.$breakpoint_md) {
+    .App {
+        box-shadow: 0px 0px 5px 2px #0000001a;
+    }
+    .page {
+        border-left: 2px solid $border-color;
+        border-right: 2px solid $border-color;
+    }
+    .header {
+        border-left: 2px solid $border-color;
+    }
+    .heroImage {
+        height: 300px;
+    }
+}
+
+.category {
+    &::after {
+        height: 17px;
+        background:
+            linear-gradient(to right, #fff 5%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 90%, #fff 95%),
+            url(/cafe-hugo/images/pattern-greek.png) repeat-x 0 0 / auto 100%;
+        content: "";
+        display: block;
+        margin-top: 50px;
+    }
+}
+
+.navContainer {
+    box-shadow: none;
+    border-bottom: 2px solid #cdcdcd;
+}

@@ -1,0 +1,5 @@
+@use '../variables.scss';
+
+.card {
+  margin: variables.$card_margin;
+}

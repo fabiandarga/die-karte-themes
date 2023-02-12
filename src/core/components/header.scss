@@ -1,0 +1,57 @@
+@use "../variables.scss";
+
+.header {
+  background: variables.$header_background;
+}
+
+.headerContent {
+  color: variables.$header_color;
+  padding: variables.$margin_xl;
+}
+
+h1 {
+  font-size: variables.$header_logo_fontSize;
+  font-family: variables.$header_logo_font;
+  color: variables.$header_logo_color;
+}
+
+.logoContent div {
+  font-family: variables.$header_logo_suffix_font;
+}
+
+.heroImage {
+  background: variables.$header_hero_image;
+}
+
+.headerAddress {
+  padding: variables.$margin_xl;
+  color: variables.$header_color;
+}
+
+.headerSocialMedia {
+  a {
+    color: variables.$social-media_link_color;
+    &:hover {
+      color: variables.$social-media_link_color--hover;
+    }
+    &:active {
+      color: variables.$social-media_link_color--active;
+    }
+  }
+}
+
+@media (min-width: variables.$breakpoint_md) {
+  h1 {
+    font-size: variables.$header_logo_fontSize_md;
+  }
+
+  .headerContent {
+    padding-top: variables.$margin_xl;
+  }
+}
+
+@media (min-width: 900px) {
+  .headerContent {
+    padding: variables.$margin_xl;
+  }
+}

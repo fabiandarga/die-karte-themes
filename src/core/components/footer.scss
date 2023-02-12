@@ -1,0 +1,38 @@
+@use "../variables.scss";
+
+.footer {
+  border-top-color: variables.$darkGrey;
+  background-color: variables.$backgroundColor;
+}
+
+.footer-logoName {
+  color: variables.$fontColorTitle;
+}
+
+.impressum-link a {
+  color: variables.$fontColorBody;
+}
+
+.footerAddress {
+  padding: variables.$margin_xl;
+  color: variables.$header_color;
+
+  ul {
+    margin-top: variables.$margin;
+    margin-bottom: variables.$margin;
+  }
+}
+
+.footerSocialMedia {
+  a {
+    color: variables.$social-media_link_color;
+
+    &:hover {
+      color: variables.$social-media_link_color--hover;
+    }
+
+    &:active {
+      color: variables.$social-media_link_color--active;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@use '../variables.scss';
+
+.additives {
+    h3 {
+        font-size: variables.$additives_title_fontSize;
+        font-family: variables.$fontTitle;
+        color: variables.$fontColorTitle;
+        margin: variables.$additives_title_margin;
+    }
+}

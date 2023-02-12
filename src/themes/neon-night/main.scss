@@ -1,0 +1,176 @@
+// Used to write css overwrites.
+// Please try variables first.
+
+/*
+e.g.:
+.menu_content {
+    max-width: 1024px;
+    border: 2px dashed green;
+}
+*/
+@use "./variables.scss";
+@import "../../core/main.scss";
+
+$border-color: #ffffff;
+
+.card {
+  background-color: black;
+}
+
+.logoName span {
+  background-image: url('./images/niceAndShinelogoEx.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent; 
+  width: 100%;
+}
+.logoContent div {
+  text-align: right;
+  text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #44e1d8,
+    0 0 17.5px #44e1d8, 0 0 20px #44e1d8, 0 0 25px #44e1d8, 0 0 37.5px #44e1d8;
+}
+.logoContent {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heroImage {
+  display: none;
+}
+
+.category_title {
+  text-align: left;
+  margin-left: 30px;
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 10px #4acae7,
+    0 0 17.5px #4acae7, 0 0 20px #4acae7, 0 0 25px #4acae7, 0 0 37.5px #4acae7;
+}
+
+.arrowBTN {
+  background-color: transparent;
+}
+
+.navContainer {
+  box-shadow: none;
+  margin: 10px;
+  border-top: none;
+  border-bottom: none;
+  padding: 0rem 1rem 0rem 1rem;
+
+  &::after {
+    height: 3px;
+    content: " ";
+    display: block;
+    width: 100%;
+    background-color: $border-color;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #6ee735,
+    0 0 35px #6ee735, 0 0 40px #6ee735, 0 0 50px #6ee735, 0 0 75px #6ee735;
+    margin-bottom: 10px;
+  }
+
+  &::before {
+    height: 3px;
+    content: " ";
+    display: block;
+    width: 100%;
+    background-color: $border-color;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #6ee735,
+    0 0 35px #6ee735, 0 0 40px #6ee735, 0 0 50px #6ee735, 0 0 75px #6ee735;
+    margin-top: 10px;
+    padding: 0;
+  }
+}
+
+.foodNameAndDescriptionContent {
+  max-width: 240px;
+}
+.price {
+  color: #252525;
+  background-color: variables.$fontColorBody;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.category {
+  &::after {
+    height: 3px;
+    margin: 0 20px;
+    background-color: $border-color;
+    content: " ";
+    font-size: 30px;
+    font-weight: 900;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e7354a,
+      0 0 35px #e7354a, 0 0 40px #e7354a, 0 0 50px #e7354a, 0 0 75px #e7354a;
+  }
+}
+@media (min-width: 400px) {
+  .foodNameAndDescriptionContent {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 450px) {
+  .foodNameAndDescriptionContent {
+    max-width: 330px;
+  }
+}
+
+@media (min-width: 500px) {
+  .foodNameAndDescriptionContent {
+    max-width: 380px;
+  }
+}
+
+@media (min-width: 550px) {
+  .foodNameAndDescriptionContent {
+    max-width: 430px;
+  }
+}
+
+@media (min-width: 600px) {
+  .foodNameAndDescriptionContent {
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 650px) {
+  .foodNameAndDescriptionContent {
+    max-width: 530px;
+  }
+}
+
+@media (min-width: 700px) {
+  .foodNameAndDescriptionContent {
+    max-width: 580px;
+  }
+}
+
+@media (min-width: variables.$breakpoint_md) {
+  .App {
+    box-shadow: 0px 0px 5px 2px #0000001a;
+  }
+  .page {
+    border-left: 2px solid $border-color;
+    border-right: 2px solid $border-color;
+  }
+  .header {
+    border-left: 1px solid $border-color;
+  }
+  .logoContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logoName span {
+    text-align: center;
+  }
+}
+

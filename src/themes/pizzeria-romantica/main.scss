@@ -1,0 +1,91 @@
+// Used to write css overwrites.
+// Please try variables first.
+@use "./variables.scss";
+@import "../../core/main.scss";
+
+/*
+e.g.:
+.menu_content {
+    max-width: 1024px;
+    border: 2px dashed green;
+}
+*/
+
+.heroImage {
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(
+      to bottom,
+      transparentize(variables.$header_background, 0),
+      transparentize(variables.$header_background, 1) 80px,
+      transparentize(variables.$header_background, 0)
+    ),
+    url("./images/background3.jpg") no-repeat center 0px / 100% fixed;
+}
+
+@media (min-width: variables.$breakpoint_md) {
+  .AppContent {
+    background-image: url("./images/PatternFood1.svg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+  }
+
+
+  .heroImage {
+    z-index: 2;
+    height: 60vh;
+    background: linear-gradient(
+      to bottom,
+      transparentize(variables.$header_background, 0),
+      transparentize(variables.$header_background, 1) 80px,
+      transparentize(variables.$header_background, 0)
+    ),
+    url("./images/background3.jpg") no-repeat center / cover;
+  }
+
+  .header > * {
+    max-width: 225px;
+  }
+
+  .logoContent {
+    div {
+      font-size: 15px;
+    }
+
+    .logoName {
+      span {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media (min-width: 860px) {
+  .header > * {
+    max-width: 270px;
+  }
+}
+
+@media (min-width: 900px) {
+  .logoContent {
+    div {
+      font-size: 20px;
+    }
+
+    .logoName {
+      span {
+        font-size: 45px;
+      }
+    }
+  }
+  .header > * {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 945px) {
+  .header > * {
+    max-width: 354px;
+  }
+}
+
