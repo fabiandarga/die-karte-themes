@@ -1,0 +1,18 @@
+@use "../variables.scss";
+
+.navContainer {
+  background-color: variables.$backgroundColor;
+  color: variables.$fontColorBody;
+  .navContainerBorder {
+    border-top: variables.$borderNavbarTop;
+    border-bottom: variables.$borderNavbarBottom;
+    .navbar-link {
+      padding-left: variables.$margin-xl; 
+      padding-right: variables.$margin-xl;
+    }
+  }
+}
+
+.active {
+  color: variables.$fontColorTitle;
+}

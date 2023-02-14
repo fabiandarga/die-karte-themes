@@ -1,0 +1,130 @@
+@use "./variables.scss";
+@import "../../core/main.scss";
+
+$border-color: #4d301a;
+$card_padding: 20px;
+
+@mixin innerBorder(
+  $outer-border,
+  $outer-border-color,
+  $colored-border,
+  $color
+) {
+  border: $outer-border solid $outer-border-color;
+  -webkit-box-shadow: inset 0 0 0 $colored-border $color;
+  -moz-box-shadow: inset 0 0 0 $colored-border $color;
+  box-shadow: inset 0 0 0 $colored-border $color;
+}
+
+.App {
+  background-image: url("./images/gold-background-1000x950.png");
+}
+
+.headerAddress {
+  background-image: url("./images/gold-hintergrund-1000-320.png");
+  @include innerBorder(4px, transparent, 1px, white);
+}
+
+.card {
+  padding: $card_padding;
+  @include innerBorder(4px, white, 1px, #c09744);
+}
+
+.navbarRoutes {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.heroImage {
+  display: none;
+}
+
+.headerContent {
+  background-image: url("./images/gold-hintergrund-1000-320.png");
+  padding: 50px;
+  margin-top: 20px;
+  @include innerBorder(4px, transparent, 1px, white);
+
+  .logoContent {
+    margin: 0px;
+  }
+}
+
+.category_title {
+  text-align: left;
+  margin-top: 100px;
+  margin-left: 30px;
+  background-image: url("./images/gold-hintergrund-1000-320.png");
+  width: max-content;
+  padding: 10px $card_padding 6px;
+  font-size: 20px;
+  @include innerBorder(4px, transparent, 1px, white);
+}
+
+.arrowBTN {
+  background-color: transparent;
+}
+
+.card{ 
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navContainer {
+  box-shadow: none;
+  margin: 10px 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  padding: 0rem 1rem 0rem 1rem;
+  background-color: rgba(255, 255, 255, 0.927);
+
+  .navContainerBorder {
+    border-top: 2px solid #c09744;
+    border-bottom: 2px solid #c09744;
+  }
+}
+
+.additives {
+  background-image: url("./images/gold-hintergrund-1000-320.png");
+  margin: 0 30px 30px 30px;
+  padding: 20px 0;
+  border-radius: 5px;
+  @include innerBorder(4px, transparent, 1px, white);
+  h3 {
+    margin: 0;
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.footer {
+  background-image: url("./images/gold-hintergrund-1000-320.png");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: variables.$breakpoint_md) {
+  .App {
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .page {
+    border-left: 2px solid $border-color;
+    border-right: 2px solid $border-color;
+  }
+  .header {
+    border-left: 2px solid $border-color;
+  }
+  .logoContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logoName span {
+    text-align: center;
+  }
+}
