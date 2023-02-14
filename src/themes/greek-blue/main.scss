@@ -14,7 +14,7 @@ e.g.:
 $border-color: #d5d5d5;
 
 .AppContent {
- background: url(/cafe-hugo/images/paper_bg.jpg);
+ background: url("./images/paper_bg.jpg");
  background-attachment: fixed;
 }
 
@@ -43,7 +43,7 @@ $border-color: #d5d5d5;
         height: 17px;
         background:
             linear-gradient(to right, #fff 5%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 90%, #fff 95%),
-            url(/cafe-hugo/images/pattern-greek.png) repeat-x 0 0 / auto 100%;
+            url("./images/pattern-greek.png") repeat-x 0 0 / auto 100%;
         content: "";
         display: block;
         margin-top: 50px;
