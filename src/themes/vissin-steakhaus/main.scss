@@ -41,7 +41,7 @@ $card_padding: 20px;
 
 .headerContent {
   background-image: url("./images/gold-hintergrund-1000-320.png");
-  padding: 50px;
+  padding: 20px;
   margin-top: 20px;
   @include innerBorder(4px, transparent, 1px, white);
 
@@ -104,8 +104,9 @@ $card_padding: 20px;
 
 .footer {
   background-image: url("./images/gold-hintergrund-1000-320.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
+
 
 @media (min-width: variables.$breakpoint_md) {
   .App {
