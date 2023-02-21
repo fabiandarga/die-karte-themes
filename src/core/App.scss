@@ -1,0 +1,27 @@
+@use "./variables.scss";
+
+
+.AppContent {
+  background-color: variables.$body_backgroundColor;
+}
+
+.App {
+  font-family: variables.$fontBody;
+}
+
+.menu_content {
+  background-color: variables.$backgroundColor;
+  color: variables.$fontColorBody;
+}
+
+$leftColumnWidthMd: 354px;
+
+@media (min-width: variables.$breakpoint_md) {
+  .App {
+    grid-template-columns: $leftColumnWidthMd minmax(0, 1fr);
+  }
+
+  .header > * { 
+    width: $leftColumnWidthMd;
+  }
+}
