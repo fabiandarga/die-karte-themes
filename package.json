@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/server/index.js",
+    "build": "node ./build/build_themes.js",
     "build:themes": "node --trace-uncaught ./build/build_themes.js",
     "build_and_start": "npm run build:themes && npm start"
   },
