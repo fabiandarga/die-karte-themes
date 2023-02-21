@@ -43,8 +43,7 @@ $border-color: #ffffff;
 .category_title {
   text-align: left;
   margin-left: 30px;
-  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 10px #4acae7,
-    0 0 17.5px #4acae7, 0 0 20px #4acae7, 0 0 25px #4acae7, 0 0 37.5px #4acae7;
+  color: $border-color;
 }
 
 .arrowBTN {
