@@ -1,0 +1,163 @@
+// Used to write css overwrites.
+// Please try variables first.
+@use "./variables.scss";
+@import "../../core/main.scss";
+/*
+e.g.:
+.menu_content {
+    max-width: 1024px;
+    border: 2px dashed green;
+}
+*/ 
+.AppContent {
+  background-color: variables.$backgroundColor;
+  background-image: url("./images/woodBackground-3.JPG"); 
+  background-size: cover;
+}   
+.navContainer {
+  background-image: url("./images/oldPaper.jpg"); 
+  background-size: cover;
+}
+
+.additives { 
+  background-image: url("./images/oldPaper.jpg"); 
+  background-size: cover;
+}
+
+.footer {
+  background-image: url("./images/oldPaper.jpg"); 
+  background-size: cover;
+}
+
+.menu_content {
+  background-color: transparent;
+}
+
+.navContainerBorder{ 
+  border-top: variables.$borderNavbarTop;
+  border-bottom: variables.$borderNavbarBottom;
+}
+
+.headerContent { 
+  color: variables.$backgroundColor;
+}
+
+.headerContent span{ 
+  color: variables.$backgroundColor;
+}
+
+.headerAddress { 
+  color: variables.$backgroundColor;
+}
+
+.headerSocialMedia a {
+  color: variables.$backgroundColor;
+}
+
+.header > * {
+ display: flex; 
+  flex-direction: column-reverse ; 
+  justify-content: center; 
+  align-items: center;
+  background-image: url("./images/darkGreen.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+}  
+
+.arrowBTN {
+  background-color: transparent;
+}
+
+.category { 
+  background-image: url("./images/oldPaperBackground.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 10px;
+  margin: 50px  5px 0 5px;
+}
+
+.category_title {
+  color: variables.$fontColorTitle;
+}
+
+.category_items {
+  color: variables.$fontColorBody;
+  max-width: 90%;
+  margin: auto;
+}
+
+.imgcontent {
+  padding-top: 2rem;
+}
+
+.description {
+  color:  variables.$descriptionColor;
+}
+
+
+.imgcontent { 
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.heroImage {
+  width: 100%;
+  height: 160px;
+   background: url("./images/greenBeer-3.png") no-repeat center / contain;
+}
+
+@media (min-width: variables.$breakpoint_md) { 
+  .page {  
+    border-left: 2px solid variables.$fontColorTitle; 
+    border-right: 2px solid variables.$fontColorTitle; 
+  }
+
+  .header > * {
+    border-left: 2px solid variables.$fontColorTitle; 
+    flex-direction: column ; 
+  }
+
+  .headerContent {
+    height: 20vh;
+  } 
+
+  .logoContent{ 
+    div{ 
+     font-size: 13px;
+    }
+  }
+
+  .logoName span { 
+    font-size: 32px;
+  } 
+
+  .imgcontent {
+    width: 100%;
+    height: 80vh; 
+    padding-top: 0;
+  }
+
+  .heroImage {
+    z-index: 2;
+    height: 90%;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 860px) {    
+
+  .logoContent{ 
+    div{ 
+     font-size: 13px;
+    }
+  }
+
+  .logoName span { 
+    font-size: 38px;
+  }
+}
