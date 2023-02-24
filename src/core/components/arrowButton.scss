@@ -1,6 +1,6 @@
 @use '../variables.scss';
 
-.arrowBTN{  
-    background-color: variables.$backgroundColor; 
-    color: variables.$fontColorBody; 
+.arrowBTN {
+    background-color: unset;
+    color: variables.$navigation_arrow_color; 
 }

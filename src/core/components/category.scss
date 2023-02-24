@@ -1,9 +1,9 @@
 @use '../variables.scss';
 
 .category_title {
-  font-family: variables.$fontTitle;
+  font-family: variables.$category_title_fontFamily;
   font-size: variables.$category_title_fontSize;
-  color: variables.$fontColorTitle;
+  color: variables.$category_title_color;
   margin: variables.$category_title_margin;
 }
 

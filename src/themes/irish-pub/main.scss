@@ -1,85 +1,40 @@
+@use "./variables.scss";
+@import "./fonts.scss";
+@import "../../core/main.scss";
+
 // Used to write css overwrites.
 // Please try variables first.
-@use "./variables.scss";
-@import "../../core/main.scss";
-/*
-e.g.:
-.menu_content {
-    max-width: 1024px;
-    border: 2px dashed green;
-}
-*/ 
+$secondary_container_background: url("./images/oldPaper.jpg") no-repeat center / cover;
+
 .AppContent {
-  background-color: variables.$backgroundColor;
-  background-image: url("./images/woodBackground-3.JPG"); 
+  background-image: url("./images/woodBackground-3.JPG");
   background-size: cover;
-}   
+  background-attachment: fixed;
+}
+
 .navContainer {
-  background-image: url("./images/oldPaper.jpg"); 
-  background-size: cover;
+  box-shadow: 0 0 5px 3px #0000004f;
 }
 
-.additives { 
-  background-image: url("./images/oldPaper.jpg"); 
-  background-size: cover;
-}
-
-.footer {
-  background-image: url("./images/oldPaper.jpg"); 
-  background-size: cover;
-}
-
-.menu_content {
-  background-color: transparent;
-}
-
-.navContainerBorder{ 
-  border-top: variables.$borderNavbarTop;
-  border-bottom: variables.$borderNavbarBottom;
-}
-
-.headerContent { 
-  color: variables.$backgroundColor;
-}
-
-.headerContent span{ 
-  color: variables.$backgroundColor;
-}
-
-.headerAddress { 
-  color: variables.$backgroundColor;
-}
-
-.headerSocialMedia a {
-  color: variables.$backgroundColor;
+.navContainer, .footer, .additives {
+  background: $secondary_container_background; 
 }
 
 .header > * {
- display: flex; 
-  flex-direction: column-reverse ; 
-  justify-content: center; 
-  align-items: center;
+  flex-direction: column-reverse ;
   background-image: url("./images/darkGreen.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
 }  
 
-.arrowBTN {
-  background-color: transparent;
-}
-
 .category { 
   background-image: url("./images/oldPaperBackground.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
-  padding-top: 10px;
+  padding: 30px 0 10px;
   margin: 50px  5px 0 5px;
-}
-
-.category_title {
-  color: variables.$fontColorTitle;
 }
 
 .category_items {
@@ -99,18 +54,16 @@ e.g.:
 
 .imgcontent { 
   background-color: transparent;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center; 
 }
+
 .heroImage {
-  width: 100%;
-  height: 160px;
-   background: url("./images/greenBeer-3.png") no-repeat center / contain;
+  background: url("./images/greenBeer-3.png") no-repeat center / contain;
 }
 
-@media (min-width: variables.$breakpoint_md) { 
+@media (min-width: variables.$breakpoint_md) {
   .page {  
     border-left: 2px solid variables.$fontColorTitle; 
     border-right: 2px solid variables.$fontColorTitle; 
@@ -145,6 +98,9 @@ e.g.:
     z-index: 2;
     height: 90%;
     width: 100%;
+  }
+  .category {
+    padding: 30px 40px 10px;
   }
 }
 
