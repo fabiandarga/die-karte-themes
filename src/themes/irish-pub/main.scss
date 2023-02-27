@@ -34,7 +34,7 @@ $secondary_container_background: url("./images/oldPaper.jpg") no-repeat center /
   background-repeat: no-repeat;
   background-position: top center;
   padding: 30px 0 10px;
-  margin: 50px  5px 0 5px;
+  margin: 50px 20px 0 20px;
 }
 
 .category_items {
@@ -64,13 +64,9 @@ $secondary_container_background: url("./images/oldPaper.jpg") no-repeat center /
 }
 
 @media (min-width: variables.$breakpoint_md) {
-  .page {  
-    border-left: 2px solid variables.$fontColorTitle; 
-    border-right: 2px solid variables.$fontColorTitle; 
-  }
-
   .header > * {
-    border-left: 2px solid variables.$fontColorTitle; 
+    border-left: 2px solid #ffffffbd; 
+    border-right: 2px solid #ffffffbd;
     flex-direction: column ; 
   }
 
