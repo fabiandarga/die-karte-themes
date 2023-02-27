@@ -1,0 +1,30 @@
+@forward "../../core/variables.scss" with (
+
+  $fontTitle: (
+    'Merienda', cursive,
+  ),
+  $fontBody: (
+    'Abel', sans-serif,
+  ),
+  $header_logo_font: (
+    "Monticello",
+    sans-serif,
+  ),
+  $header_logo_suffix_font: (
+    "Bellefair",
+    serif,
+  ),
+
+  $fontColorTitle: #619906,
+  $fontColorBody: #FFFF,
+  $backgroundColor: unset,
+  $body_backgroundColor: unset,
+  $category_title_fontSize: 26px,
+  $item_description_color: #FFFF,
+  $socialMediaHover: #619906,
+  $socialMediaActive: #FFFF,
+  $header_logo_name_maxWidth: 300px,
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
