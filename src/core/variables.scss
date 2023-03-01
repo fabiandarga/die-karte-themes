@@ -16,8 +16,9 @@ $socialMediaActive: black !default;
 $margin: 1rem;
 $margin_lg: 1.5rem;
 $margin_xl: 2rem;
-
 $breakpoint_md: 836px;
+// content 
+$content_backgroundColor: #ffffff !default;
 
 $app_background: unset !default;
 
@@ -27,7 +28,13 @@ $secondary_container_background: $backgroundColor !default;
 /*
 * Components
 */
-$card_margin: 2em !default;
+$card_margin: 2em !default; 
+$card_borderRadius: 4px !default;
+$card_backgroundColor: unset !default;
+$card_padding: 0 !default;
+
+$arrowBTN_backgroundColor: unset !default;
+$arrowBTN_fontColor: unset !default;
 
 /*
  * Modules

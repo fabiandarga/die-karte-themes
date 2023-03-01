@@ -8,10 +8,6 @@ $card_padding: 20px;
   background-color: #1A271F;
 }
 
-.App {
-  background-color: #1A271F;
-}
-
 .menu_content {
   background-color: #ffff;
 }
@@ -28,18 +24,6 @@ $card_padding: 20px;
 .headerContent {
   padding: 20px;
   margin-top: 20px;
-
-  .logoContent {
-    margin: 0px;
-
-    div {
-      display: none;
-    } 
-
-    h1 {
-      display: none;
-    }
-  }
 }
 
 .category_title {
@@ -53,21 +37,15 @@ $card_padding: 20px;
   border-bottom: 3px solid #1A271F;
 }
 
-.arrowBTN {
-  background-color: transparent;
-  color: #1A271F;
-}
-
 .card{ 
-  min-height: 80px;
-  padding: 20px;
-  border-radius: 10px;
   -webkit-box-shadow: 10px 10px 3px 0px rgb(121 124 126 / 50%);
-  box-shadow: 10px 10px 3px 0px rgb(121 124 126 / 50%);
+  box-shadow: 10px 10px 3px 0px rgb(121 124 126 / 50%); 
 }
 
-.card {
-  background-color: #1A271F;  
+.foodNameAndDescriptionAndPriceContent {
+  align-items: center;
+  width: 100%;
+  min-height: 40px;
 }
 
 .navContainer {
