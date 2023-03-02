@@ -1,17 +1,11 @@
 @use "./variables.scss";
 @import "../../core/main.scss";
 
-$border-color: #733D15;
+$border-color: #C27F40;
 $card_padding: 20px;
 
 .AppContent {
-  background-image: url("./images/background.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.menu_content {
-  background-color: #F7EDDE;
+ background-color: #221316;
 }
 
 .navbarRoutes {
@@ -24,6 +18,10 @@ $card_padding: 20px;
   margin-top: 20px;
 }
 
+.menu_content {
+ border-right: 2px solid $border-color;
+}
+
 .category_title {
   text-align: center;
   margin-top: 60px;
@@ -32,12 +30,7 @@ $card_padding: 20px;
   padding: 10px $card_padding 6px 0;
   font-size: 30px;
   font-weight: bolder;
-  border-bottom: 2px solid $border-color;
-}
-
-.category_items {
-  margin: 0 20px;
-  padding: 5px 0;
+  border-bottom: 2px solid #CD2F2E;
 }
 
 .foodNameAndDescriptionAndPriceContent {
@@ -52,11 +45,8 @@ $card_padding: 20px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   padding: 0rem 1rem 0rem 1rem;
-  background-color: transparent;
-  color: #733D15;
-  background-image: url("./images/background.jpg");
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: #221316;
+  color: #F2DFAB;
 
   .navContainerBorder {
     border-top: 2px solid $border-color;
@@ -64,20 +54,28 @@ $card_padding: 20px;
   }
 }
 
-.logoContent div {
-  letter-spacing: 3px;
-  font-weight: 900;
-}
+.foodNameAndDescriptionContent
+  .foodName {
+    font-size: 20px;
+    font-weight: bold;
+  }
 
-.logoName span {
-  letter-spacing: 10px;
-}
+  .description {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .price {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
 
 .additives {
   margin: 30px;
   padding: 20px 0;
   border-radius: 5px;
-  background-color: #733e1573;
+  border: 2px solid $border-color;
 
   h3 {
     margin: 0;
@@ -86,11 +84,11 @@ $card_padding: 20px;
 }
 
 .headerSocialMedia a {
-  color: #733D15;
+  color: $border-color;
 }
 
 .footerSocialMedia a {
-  color: #733D15;
+  color: $border-color;
 }
 
 .price {
@@ -106,7 +104,7 @@ $card_padding: 20px;
 }
 
 .footer {
-  border-top-color: #733D15;
+  border-top-color: $border-color;
 }
 
 
