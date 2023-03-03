@@ -1,19 +1,19 @@
 @forward "../../core/variables.scss" with (
 
   $fontTitle: (
-    'Caesar Dressing', cursive,
+    'Luckiest Guy', cursive,
   ),
   $fontBody: (
     'Abel', sans-serif,
   ),
   $header_logo_font: (
-    'Caesar Dressing', cursive,
+    'Luckiest Guy', cursive,
   ),
   $header_logo_suffix_font: (
     'Abel', sans-serif,
   ),
 
-  $fontColorTitle: #CD2F2E,
+  $fontColorTitle: #F2DFAB,
   $fontColorBody: #F2DFAB,
   $backgroundColor: unset,
   $body_backgroundColor: unset,
@@ -39,5 +39,5 @@
   $arrowBTN_fontColor: #C27F40,
 );
 
-@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
