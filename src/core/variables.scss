@@ -4,6 +4,7 @@ $darkGrey: rgba(209, 213, 219, 0.3);
 $fontColorTitle: rgb(26, 26, 127) !default; 
 $fontColorBody: #000 !default;
 $header_logo_suffix_font:  Arial, sans-serif !default;
+$header_borderLeft: none !default;
 $backgroundColor: #ffffff !default; 
 $body_backgroundColor: #2a2929 !default; 
 $fontTitle: Arial, sans-serif !default;
@@ -16,13 +17,21 @@ $socialMediaActive: black !default;
 $margin: 1rem;
 $margin_lg: 1.5rem;
 $margin_xl: 2rem;
-
 $breakpoint_md: 836px;
+// content 
+$content_backgroundColor: #ffffff !default;
 
 /*
 * Components
 */
-$card_margin: 2em !default;
+$card_margin: 2em !default; 
+$card_borderRadius: 4px !default;
+$card_backgroundColor: unset !default;
+$card_padding: 0 !default;
+$card_borderBottom: none !default;
+
+$arrowBTN_backgroundColor: unset !default;
+$arrowBTN_fontColor: unset !default;
 
 /*
  * Modules

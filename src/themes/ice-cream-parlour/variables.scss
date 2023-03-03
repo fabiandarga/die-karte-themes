@@ -1,0 +1,37 @@
+@forward "../../core/variables.scss" with (
+
+  $fontTitle: (
+    'Zeyada', cursive,
+  ),
+  $fontBody: (
+     'Oswald', sans-serif,
+  ),
+  $header_logo_font: (
+    "Monticello",
+    sans-serif,
+  ),
+  $header_logo_suffix_font: (
+    "Bellefair",
+    serif,
+  ),
+
+  $fontColorTitle: #4d301a,
+  $fontColorBody: #4d301a,
+  $backgroundColor: unset,
+  $body_backgroundColor: unset,
+  $category_title_fontSize: 26px,
+  $item_description_color: #4d301a,
+  $socialMediaHover: #c09744,
+  $socialMediaActive: #4d301a,
+  $header_logo_name_maxWidth: 300px,
+);
+
+@font-face {
+  font-family: "Monticello";
+  src: url("./fonts/monticello-roman-fonts/Monticello LT W01 Roman/Monticello\ LT\ W01\ Roman.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');

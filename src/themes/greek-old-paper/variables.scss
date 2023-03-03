@@ -1,0 +1,40 @@
+@forward "../../core/variables.scss" with (
+
+  $fontTitle: (
+    'Caesar Dressing', cursive,
+  ),
+  $fontBody: (
+    'Abel', sans-serif,
+  ),
+  $header_logo_font: (
+    'Caesar Dressing', cursive,
+  ),
+  $header_logo_suffix_font: (
+    'Abel', sans-serif,
+  ),
+
+  $fontColorTitle: #1657A4,
+  $fontColorBody: #733D15,
+  $backgroundColor: unset,
+  $body_backgroundColor: unset,
+  $category_title_fontSize: 26px,
+  $item_description_color: #733D15,
+  $socialMediaHover: #1657A4,
+  $socialMediaActive: #FFFF,
+  $header_logo_name_maxWidth: 300px,
+  // Content
+  $content_backgroundColor: transparent,
+  
+  //card 
+  $card_borderRadius : 0,
+  $card_backgroundColor: transparent,
+  $card_padding: 0,
+  $card_margin: 10px 1em 0 1em,
+  $card_borderBottom: none,
+  // arrowButton
+  $arrowBTN_backgroundColor: transparent,
+  $arrowBTN_fontColor: #733D15,
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
