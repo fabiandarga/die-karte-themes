@@ -31,6 +31,7 @@ $card_padding: 20px;
   font-size: 30px;
   font-weight: bolder;
   border-bottom: 2px solid #CD2F2E;
+  letter-spacing: 8px;
 }
 
 .foodNameAndDescriptionAndPriceContent {
@@ -105,6 +106,11 @@ $card_padding: 20px;
 
 .footer {
   border-top-color: $border-color;
+}
+
+.logoName span {
+  letter-spacing: 10px;
+  text-shadow: 3px 3px #cd2f2e, -3px -3px #cd2f2e, 3px -3px #cd2f2e, -3px 3px #cd2f2e;
 }
 
 
