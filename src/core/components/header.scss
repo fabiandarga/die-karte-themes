@@ -2,6 +2,7 @@
 
 .header {
   background: variables.$header_background;
+  border-left: variables.$header_borderLeft;
 }
 
 .headerContent {
