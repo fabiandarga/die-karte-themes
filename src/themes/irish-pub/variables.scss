@@ -5,8 +5,20 @@
     $fontColorBody: #7f602b,
     $backgroundColor: #FFFFFF,
 
+    $app_background: url("./images/woodBackground-3.JPG") center / cover fixed,
+    $secondary_container_background: url("./images/oldPaper.jpg") no-repeat center / cover,
+
     $header_color: #fff,
+    
+    $header_hero_image: url("./images/greenBeer-3.png") no-repeat center / contain,
+
+    $category_background: url("./images/oldPaperBackground.png") top center / 100% no-repeat,
+    $category_margin: 50px 20px 0 20px,
+    $category_padding: 30px 0 10px,
 
     $category_title_color: #433317,
-    
+
+    $navigation_shadow: 0 0 5px 3px #0000004f,
+
+    $item_description_color: #606060,
 );

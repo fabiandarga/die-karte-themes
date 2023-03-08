@@ -1,5 +1,10 @@
 @use '../variables.scss';
 
+.category_item {
+  color: variables.$item_fontColor;
+
+}
+
 .foodName {
   font-size: variables.$item_title_fontSize;
   font-weight: variables.$item_title_fontWeight;
