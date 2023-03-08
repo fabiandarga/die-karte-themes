@@ -1,12 +1,12 @@
 @use "./variables.scss";
 
 
-.AppContent {
-  background-color: variables.$body_backgroundColor;
+.App {
+  background-color: variables.$app_backgroundColor;
   background: variables.$app_background;
 }
 
-.App {
+.content {
   font-family: variables.$fontBody;
   background-color: variables.$content_backgroundColor;
 }
