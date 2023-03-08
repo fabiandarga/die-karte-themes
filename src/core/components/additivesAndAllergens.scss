@@ -1,6 +1,8 @@
 @use '../variables.scss';
 
 .additives {
+    background: variables.$additives_background;
+    
     h3 {
         font-size: variables.$additives_title_fontSize;
         font-family: variables.$fontTitle;

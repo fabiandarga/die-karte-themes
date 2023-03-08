@@ -55,13 +55,17 @@ function copyFonts(themeName) {
 createFolderIfNotExists('dist');
 createFolderIfNotExists('dist/themes');
 
+const arguments = process.argv
+const cssOnly = arguments.includes('--css-only')
 fs.readdir('src/themes', { withFileTypes: true }, (err, files) => {
     files.forEach(element => {
         if (element.isDirectory()) {
             const file = path.join('src', 'themes', element.name, 'main.scss');
             compile(file, element.name);
-            copyImages(element.name);
-            copyFonts(element.name);
+            if (!cssOnly) {
+                copyImages(element.name);
+                copyFonts(element.name);
+            }
         }
     });
 });

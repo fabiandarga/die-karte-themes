@@ -2,22 +2,10 @@
 // Please try variables first.
 @use "./variables.scss";
 @import "../../core/main.scss";
-/*
-e.g.:
-.menu_content {
-    max-width: 1024px;
-    border: 2px dashed green;
-}
-*/ 
+
 .AppContent {
-  background-color: variables.$backgroundColor;
   background-image: none;
 }   
-
-.navContainerBorder{ 
-  border-top: variables.$borderNavbarTop;
-  border-bottom: variables.$borderNavbarBottom;
-}
 
 .header > * {
  display: flex; 

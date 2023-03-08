@@ -3,12 +3,21 @@
   "version": "0.0.1",
   "description": "The theme collection and a server who provides them to the main app",
   "main": "src/server/index.js",
+  "watch": {
+    "build:css": {
+      "patterns": ["src/themes", "src/core"],
+      "extensions": "scss"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/server/index.js",
-    "build": "node ./build/build_themes.js",
-    "build:themes": "node --trace-uncaught ./build/build_themes.js",
-    "build_and_start": "npm run build:themes && npm start"
+    "start:dev": "run-p start watch",
+    "build": "node --trace-uncaught ./build/build_themes.js",
+    "build:css": "node --trace-uncaught ./build/build_themes.js --css-only",
+    "build_and_start": "run-s build start",
+    "build_and_start:dev": "run-s build start:dev",
+    "watch": "npm-watch"
   },
   "repository": {
     "type": "git",
@@ -24,6 +33,10 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "fs-extra": "^11.1.0",
+    "npm-watch": "^0.11.0",
     "sass": "^1.58.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }

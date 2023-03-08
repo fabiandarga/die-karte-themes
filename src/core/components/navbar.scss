@@ -1,7 +1,9 @@
 @use "../variables.scss";
 
 .navContainer {
-  background-color: variables.$backgroundColor;
+  background: variables.$navigation_background;
+  box-shadow: variables.$navigation_shadow;
+
   color: variables.$fontColorBody;
   .navContainerBorder {
     border-top: variables.$borderNavbarTop;
