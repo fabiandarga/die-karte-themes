@@ -1,0 +1,56 @@
+$primaryColor: #ED207B;
+$fontColor: #fff;
+$borderColor: transparentize($primaryColor, 0.4);
+
+@forward "../../core/variables.scss" with (
+
+  $fontTitle: (
+    'Pacifico', cursive,
+  ),
+  $fontBody: (
+    'Abel', sans-serif,
+  ),
+  $header_logo_font: (
+    'Pacifico', cursive,
+  ),
+  $header_logo_suffix_font: (
+    'Abel', sans-serif,
+  ),
+
+  $app_background: url("./images/background.JPG") center / cover fixed,
+
+  $navigation_link_fontSize: 20px,
+  $navigation_link_fontWeight: bold,
+
+  $fontColorTitle: $primaryColor,
+  $fontColorBody: #FFFF,
+  $backgroundColor: unset,
+  $socialMediaHover: $fontColor,
+  $socialMediaActive: $primaryColor,
+
+  $logo-name_maxWidth: 300px,
+
+  // menu_content
+  $menu_content_border_right: 2px solid $borderColor,
+  $menu_content_border_left: 2px solid $borderColor,
+
+  // card 
+  $card_margin: 2rem 2rem 0,
+  $card_borderBottom: 2px solid #FFFF,
+
+  // category
+  $category_title_fontSize: 30px,
+
+  // Item
+  $item_title_fontWeight: bold,
+  $item_price_fontColor: $primaryColor,
+
+  // arrowButton
+  $arrowBTN_backgroundColor: transparent,
+  $arrowBTN_fontColor: $primaryColor,
+
+  $social-media_link_color: $primaryColor,
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
