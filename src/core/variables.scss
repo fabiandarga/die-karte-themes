@@ -49,6 +49,9 @@ $header_logo_fontSize: 60px !default;
 $header_logo_fontSize_md: 48px !default;
 $header_hero_image: none !default;
 $header_logo_name_maxWidth: 300px !default;
+$header_logo_name_background_color: unset !default;
+$logo-name_padding:0 !default;
+$logo-name_borderRadius: 0 !default;
 
 $footer_background: $secondary_container_background !default;
 
@@ -78,6 +81,7 @@ $item_title_fontWeight: 500 !default;
 $item_description_margin: 0.5em 1em 0 0 !default;
 $item_description_color: #C2C2C2 !default;
 $item_description_fontSize: 15px !default;  
+$item_price_fontColor : #C2C2C2 !default;
 
 $social-media_link_color: $header_color !default;
 $social-media_link_color--hover: color.scale($header_color, $lightness: 15%) !default;

@@ -1,40 +1,61 @@
 @forward "../../core/variables.scss" with (
-
   $fontTitle: (
-    'Merienda', cursive,
+    "Merienda",
+    cursive,
   ),
   $fontBody: (
-    'Abel', sans-serif,
+    "Abel",
+    sans-serif,
   ),
   $header_logo_font: (
-    'Stylish', sans-serif,
+    "Stylish",
+    sans-serif,
   ),
   $header_logo_suffix_font: (
-    'Abel', sans-serif,
+    "Abel",
+    sans-serif,
   ),
-
   $fontColorTitle: #619906,
-  $fontColorBody: #FFFF,
+  $fontColorBody: #ffff,
 
-  $app_background: #1A271F,
-  $app_backgroundColor:  #1A271F,
-  
+  $app_background: #1a271f,
+  $app_backgroundColor: #1a271f,
   $category_title_fontSize: 26px,
-  $item_description_color: #FFFF,
   $socialMediaHover: #619906,
-  $socialMediaActive: #FFFF,
+  $socialMediaActive: #ffff,
+
+  //! header
   $header_logo_name_maxWidth: 300px,
 
+  //! header .logoname span
+  $header_logo_name_background_color: #ffff,
+  $logo-name_padding: 50px,
+  $logo-name_borderRadius: 10px,
 
-  //card 
-  $card_borderRadius : 10px,
-  $card_backgroundColor: #1A271F,
+  //! card
+  $card_borderRadius: 10px,
+  $card_backgroundColor: #1a271f,
   $card_padding: 20px,
-  // arrowButton
+
+  //! item
+  $item_fontColor: #ffff,
+
+  //! item title (.foodName)
+  // $item_title_fontSize;
+  // $item_title_fontWeight;
+  //! item description (.description)
+  // $item_description_color:
+  // $item_description_fontSize:
+  // $item_description_margin:
+  //! item price (.price)
+  // $item_title_fontSize:
+  $item_title_fontWeight: bold,
+  // $item_price_fontColor:
+  //! arrowButton
   $arrowBTN_backgroundColor: transparent,
-  $arrowBTN_fontColor: #1A271F,
+  $arrowBTN_fontColor: #1a271f
 );
 
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stylish&display=swap");

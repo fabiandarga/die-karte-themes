@@ -30,6 +30,9 @@ h1 {
 
 .logoName span {
   max-width: variables.$header_logo_name_maxWidth;
+  background-color:  variables.$header_logo_name_background_color;
+  padding: variables.$logo-name_padding;
+  border-radius: variables.$logo-name_borderRadius;
 }
 
 .headerSocialMedia {
