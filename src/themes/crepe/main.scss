@@ -1,23 +1,8 @@
 @use "./variables.scss";
 @import "../../core/main.scss";
 
-$border-color: #ED207B;
+$strokeColor: #fff;
 $card_padding: 20px;
-
-.App {
- background-image: url("./images/background.JPG");
- background-size: cover;
- background-attachment: fixed;
-}
-
-.menu_content {
-  background-color: transparent;
-}
-
-.navbarRoutes {
-  font-size: 20px;
-  font-weight: bold;
-}
 
 .headerContent {
   padding: 20px;
@@ -25,61 +10,38 @@ $card_padding: 20px;
 }
 
 .category_title {
-  text-align: center;
-  margin-top: 60px;
-  margin-left: 30px;
   width: max-content;
-  margin: 60px auto 0 auto;
-  padding: 10px $card_padding 6px 0;
-  font-size: 30px;
+  margin: 0 auto;
   font-weight: bolder;
 }
 
+.category_title {
+  &::after, &::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: $strokeColor;
+  }
+}
+
 .category_title::after {
-  content: "";
-  display: block;
-  position: relative;
-  left: -20px;
-  width: 100%;
-  height: 3px;
-  background-color: #FFFF;
-  margin-top: 5px;
+  left: 23px;
 }
 
 .category_title::before {
-  content: "";
-  display: block;
-  position: relative;
-  bottom: -65px;
-  left: -50px;
+  bottom: -68px;
+  left: -30px;
   width: 80%;
-  width: 100%;
-  height: 3px;
-  background-color: #FFFF;
-  margin-top: 5px;
-}
-
-.foodNameAndDescriptionAndPriceContent {
-  align-items: center;
-  width: 100%;
-  min-height: 40px;
 }
 
 .navContainer {
-  box-shadow: none;
-  margin: 10px 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  padding: 0rem 1rem 0rem 1rem;
-  background-color: transparent;
-  color: #FFFF;
-  background-image: url("./images/background.JPG");
-  background-size: cover;
-  background-attachment: fixed;
+  background: url("./images/background.JPG");
 
   .navContainerBorder {
-    border-top: 2px solid $border-color;
-    border-bottom: 2px solid $border-color;
+    border-top: 2px solid variables.$borderColor;
+    border-bottom: 2px solid variables.$borderColor;
   }
 }
 
@@ -87,61 +49,33 @@ $card_padding: 20px;
   margin: 30px;
   padding: 20px 0;
   border-radius: 5px;
-  background-color: #ed207c5d;
+  background-color: transparentize($color: variables.$primaryColor, $amount: 0.64);
   h3 {
     margin: 0;
     color: #FFFF;
   }
 }
 
-.heroImage {
-  width: 100%;
-  height: 160px;
-  background: url("./images/crepeForMobile.png") no-repeat center / contain;
-}
-
-.headerSocialMedia a {
- color: #ED207B;
-}
-
-.footerSocialMedia a {
-  color: #ED207B;
-}
-
 .price {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  border-radius: 50%;
-  color: #ED207B;
+  font-weight: bold;
 }
 
 .description {
-  margin-bottom: 0.5em; 
+  margin-bottom: 0.5em;
 }
 
 .footer {
-  border-top-color: #ED207B;
+  border-top-color: variables.$borderColor;
 }
 
 
 @media (min-width: variables.$breakpoint_md) {
-  .App {
-    background-position: center;
-    background-attachment: fixed;
-  }
   .logoContent {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .heroImage {
-    width: 100%;
-    height: 50vh; 
-    padding-top: 0;
-    background: url("./images/crepeForDesktop.png") no-repeat center / contain;
-  }
+
   .logoName span {
     text-align: center;
   }

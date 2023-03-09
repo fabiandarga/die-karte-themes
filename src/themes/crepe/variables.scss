@@ -1,3 +1,7 @@
+$primaryColor: #ED207B;
+$fontColor: #fff;
+$borderColor: transparentize($primaryColor, 0.4);
+
 @forward "../../core/variables.scss" with (
 
   $fontTitle: (
@@ -13,29 +17,39 @@
     'Abel', sans-serif,
   ),
 
-  $fontColorTitle: #ED207B,
+  $app_background: url("./images/background.JPG") center / cover fixed,
+
+  $navigation_link_fontSize: 20px,
+  $navigation_link_fontWeight: bold,
+
+  $fontColorTitle: $primaryColor,
   $fontColorBody: #FFFF,
   $backgroundColor: unset,
-  $body_backgroundColor: unset,
-  $category_title_fontSize: 26px,
-  $item_description_color: #FFFF,
-  $socialMediaHover: #FFFF,
-  $socialMediaActive: #ED207B,
-  $header_logo_name_maxWidth: 300px,
+  $socialMediaHover: $fontColor,
+  $socialMediaActive: $primaryColor,
+
+  $logo-name_maxWidth: 300px,
 
   // menu_content
-  $menu_content_border_right: 2px solid #ED207B,
-  $menu_content_border_left: 2px solid #ED207B,
+  $menu_content_border_right: 2px solid $borderColor,
+  $menu_content_border_left: 2px solid $borderColor,
 
-  //card 
-  $card_borderRadius : 0,
-  $card_backgroundColor: transparent,
-  $card_padding: 0,
-  $card_margin: 20px 2rm 0 2rm,
+  // card 
+  $card_margin: 2rem 2rem 0,
   $card_borderBottom: 2px solid #FFFF,
+
+  // category
+  $category_title_fontSize: 30px,
+
+  // Item
+  $item_title_fontWeight: bold,
+  $item_price_fontColor: $primaryColor,
+
   // arrowButton
   $arrowBTN_backgroundColor: transparent,
-  $arrowBTN_fontColor: #ED207B,
+  $arrowBTN_fontColor: $primaryColor,
+
+  $social-media_link_color: $primaryColor,
 );
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
