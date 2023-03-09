@@ -24,35 +24,47 @@
   $socialMediaHover: #619906,
   $socialMediaActive: #ffff,
 
-  //! header
-  $header_logo_name_maxWidth: 300px,
+  /**
+ * ! Module: Header
+ */ $header_logo_name_maxWidth: 300px,
 
-  //! header .logoname span
-  $header_logo_name_background_color: #ffff,
+  /**
+ * ! header .logoname span
+ */ $header_logo_name_background_color: #ffff,
   $logo-name_padding: 50px,
   $logo-name_borderRadius: 10px,
 
-  //! card
-  $card_borderRadius: 10px,
+  /**
+  * ! card
+  */ $card_borderRadius: 10px,
   $card_backgroundColor: #1a271f,
   $card_padding: 20px,
 
-  //! item
-  $item_fontColor: #ffff,
+  /**
+  * ! item
+  */ $item_fontColor: #ffff,
 
-  //! item title (.foodName)
-  // $item_title_fontSize;
-  // $item_title_fontWeight;
-  //! item description (.description)
-  // $item_description_color:
-  // $item_description_fontSize:
-  // $item_description_margin:
-  //! item price (.price)
-  // $item_title_fontSize:
-  $item_title_fontWeight: bold,
-  // $item_price_fontColor:
-  //! arrowButton
-  $arrowBTN_backgroundColor: transparent,
+  /**
+  * ! item title (.foodName)
+    $item_title_fontSize;
+    $item_title_fontWeight;
+  */
+    /**
+   * ! item description (.description)
+    $item_description_color:
+    $item_description_fontSize:
+    $item_description_margin:
+  */
+    /**
+  * ! item price (.price)
+    $item_title_fontSize:
+    $item_price_fontColor:
+  */
+    $item_title_fontWeight: bold,
+
+  /**
+  * ! arrowButton
+  */ $arrowBTN_backgroundColor: transparent,
   $arrowBTN_fontColor: #1a271f
 );
 
