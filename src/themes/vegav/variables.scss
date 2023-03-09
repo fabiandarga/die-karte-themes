@@ -1,0 +1,49 @@
+@forward '../../core/variables.scss' with (
+  $fontTitle: (
+    'Merienda',
+    cursive,
+  ),
+  $fontBody: (
+    'Abel',
+    sans-serif,
+  ),
+  $header_logo_font: (
+    'Stylish',
+    sans-serif,
+  ),
+  $header_logo_suffix_fontSize: 30px,
+  $fontColorTitle: #619906,
+  $fontColorBody: #ffff,
+
+  $app_background: #1a271f,
+  $app_backgroundColor: #1a271f,
+  $category_title_fontSize: 26px,
+  $socialMediaHover: #619906,
+  $socialMediaActive: #ffff,
+
+  /** Module: Header */
+
+  /** Module: Logo Name (as Text) */
+  $logo-name_maxWidth: 300px,
+  $logo-name_backgroundColor: #ffff,
+  $logo-name_padding: 50px,
+  $logo-name_margin: 20px 0 0,
+  $logo-name_borderRadius: 10px,
+
+  /** Component: Card  */
+  $card_borderRadius: 10px,
+  $card_backgroundColor: #1a271f,
+  $card_padding: 20px,
+
+  /** Component: Item */
+  $item_fontColor: #ffff,
+  $item_title_fontWeight: bold,
+
+  /** Module: arrowButton */
+  $arrowBTN_backgroundColor: transparent,
+  $arrowBTN_fontColor: #1a271f
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');

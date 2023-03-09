@@ -8,9 +8,9 @@
   height: 160px;
   background: linear-gradient(
       to bottom,
-      transparentize(variables.$header_background, 0),
-      transparentize(variables.$header_background, 1) 80px,
-      transparentize(variables.$header_background, 0)
+      transparentize(variables.$app_background, 0),
+      transparentize(variables.$app_background, 1) 80px,
+      transparentize(variables.$app_background, 0)
     ),
     url("./images/background3.jpg") no-repeat center 0px / 100% fixed;
 }
@@ -28,9 +28,9 @@
     height: 30vh;
     background: linear-gradient(
       to bottom,
-      transparentize(variables.$header_background, 0),
-      transparentize(variables.$header_background, 1) 80px,
-      transparentize(variables.$header_background, 0)
+      transparentize(variables.$app_background, 0),
+      transparentize(variables.$app_background, 1) 80px,
+      transparentize(variables.$app_background, 0)
     ),
     url("./images/background3.jpg") no-repeat center / cover;
   }
