@@ -6,8 +6,12 @@ $card_padding: 20px;
 
 .menu_content {
   background-color: #ffff;
-  
 }
+
+.AppContent {
+  background-color: #ffff;
+}
+
 
 .navbarRoutes {
   font-size: 20px;
@@ -21,6 +25,12 @@ $card_padding: 20px;
 .headerContent {
   padding: 20px;
   margin-top: 20px;
+}
+
+.logoName span {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
 }
 
 .category_title {
@@ -75,8 +85,9 @@ $card_padding: 20px;
   justify-content: center;
   align-items: center;
   width: 50px;
-  border-radius: 50%;
-  color: #619906;
+  border-radius: 50%; 
+  font-weight: bold;
+  color: #ffff;
 }
 
 .footer {

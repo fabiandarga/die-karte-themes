@@ -7,18 +7,17 @@
     'Abel', sans-serif,
   ),
   $header_logo_font: (
-    "Monticello",
-    sans-serif,
+    'Stylish', sans-serif,
   ),
   $header_logo_suffix_font: (
-    "Bellefair",
-    serif,
+    'Abel', sans-serif,
   ),
 
   $fontColorTitle: #619906,
   $fontColorBody: #FFFF,
 
-  $app_background: #191919,
+  $app_background: #1A271F,
+  $app_backgroundColor:  #1A271F,
   
   $category_title_fontSize: 26px,
   $item_description_color: #FFFF,
@@ -38,3 +37,4 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
