@@ -30,7 +30,7 @@ $secondary_container_background: $backgroundColor !default;
 * Components
 */
 $card_margin: 2em !default; 
-$card_borderRadius: 4px !default;
+$card_borderRadius: 0 !default;
 $card_backgroundColor: unset !default;
 $card_padding: 0 !default;
 $card_borderBottom: none !default;
@@ -63,6 +63,8 @@ $footer_background: $secondary_container_background !default;
 $navigation_arrow_color: black !default;
 $navigation_shadow: none !default;
 $navigation_background: $secondary_container_background !default;
+$navigation_link_fontSize: inherit !default;
+$navigation_link_fontWeight: normal !default;
 
 $menu_content_backgroundColor: unset !default;
 $menu_content_border_right: none !default;
@@ -87,7 +89,8 @@ $item_title_fontWeight: 500 !default;
 
 $item_description_margin: 0.5em 1em 0 0 !default;
 $item_description_color: #C2C2C2 !default;
-$item_description_fontSize: 15px !default;  
+$item_description_fontSize: 15px !default;
+
 $item_price_fontColor : #C2C2C2 !default;
 
 $social-media_link_color: $header_color !default;
