@@ -48,8 +48,9 @@ $header_logo_font: $fontTitle !default;
 $header_logo_fontSize: 60px !default;
 $header_logo_fontSize_md: 48px !default;
 $header_hero_image: none !default;
-$header_logo_name_maxWidth: 300px !default;
-$header_logo_name_background_color: unset !default;
+$logo-name_maxWidth: 300px !default;
+
+$logo-name_backgroundColor: unset !default;
 $logo-name_padding:0 !default;
 $logo-name_borderRadius: 0 !default;
 

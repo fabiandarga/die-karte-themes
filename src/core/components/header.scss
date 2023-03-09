@@ -29,8 +29,8 @@ h1 {
 }
 
 .logoName span {
-  max-width: variables.$header_logo_name_maxWidth;
-  background-color:  variables.$header_logo_name_background_color;
+  max-width: variables.$logo-name_maxWidth;
+  background-color:  variables.$logo-name_backgroundColor;
   padding: variables.$logo-name_padding;
   border-radius: variables.$logo-name_borderRadius;
 }

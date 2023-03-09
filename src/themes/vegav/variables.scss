@@ -1,18 +1,18 @@
-@forward "../../core/variables.scss" with (
+@forward '../../core/variables.scss' with (
   $fontTitle: (
-    "Merienda",
+    'Merienda',
     cursive,
   ),
   $fontBody: (
-    "Abel",
+    'Abel',
     sans-serif,
   ),
   $header_logo_font: (
-    "Stylish",
+    'Stylish',
     sans-serif,
   ),
   $header_logo_suffix_font: (
-    "Abel",
+    'Abel',
     sans-serif,
   ),
   $fontColorTitle: #619906,
@@ -24,50 +24,28 @@
   $socialMediaHover: #619906,
   $socialMediaActive: #ffff,
 
-  /**
- * ! Module: Header
- */ $header_logo_name_maxWidth: 300px,
+  /** Module: Header */
+  $logo-name_maxWidth: 300px,
 
-  /**
- * ! header .logoname span
- */ $header_logo_name_background_color: #ffff,
+  /** Module: Logo Name (as Text) */
+  $logo-name_backgroundColor: #ffff,
   $logo-name_padding: 50px,
   $logo-name_borderRadius: 10px,
 
-  /**
-  * ! card
-  */ $card_borderRadius: 10px,
+  /** Component: Card  */
+  $card_borderRadius: 10px,
   $card_backgroundColor: #1a271f,
   $card_padding: 20px,
 
-  /**
-  * ! item
-  */ $item_fontColor: #ffff,
+  /** Component: Item */
+  $item_fontColor: #ffff,
+  $item_title_fontWeight: bold,
 
-  /**
-  * ! item title (.foodName)
-    $item_title_fontSize;
-    $item_title_fontWeight;
-  */
-    /**
-   * ! item description (.description)
-    $item_description_color:
-    $item_description_fontSize:
-    $item_description_margin:
-  */
-    /**
-  * ! item price (.price)
-    $item_title_fontSize:
-    $item_price_fontColor:
-  */
-    $item_title_fontWeight: bold,
-
-  /**
-  * ! arrowButton
-  */ $arrowBTN_backgroundColor: transparent,
+  /** Module: arrowButton */
+  $arrowBTN_backgroundColor: transparent,
   $arrowBTN_fontColor: #1a271f
 );
 
-@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Stylish&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
