@@ -3,7 +3,6 @@
 $darkGrey: rgba(209, 213, 219, 0.3);
 $fontColorTitle: rgb(26, 26, 127) !default; 
 $fontColorBody: #000 !default;
-$header_logo_suffix_font:  Arial, sans-serif !default;
 $backgroundColor: #ffffff !default; 
 $app_backgroundColor: #2a2929 !default; 
 $fontTitle: Arial, sans-serif !default;
@@ -47,10 +46,14 @@ $header_logo_color: $fontColorTitle !default;
 $header_logo_font: $fontTitle !default;
 $header_logo_fontSize: 60px !default;
 $header_logo_fontSize_md: 48px !default;
+$header_logo_suffix_font: $header_logo_font !default;
+$header_logo_suffix_fontSize:  20px !default;
+
 $header_hero_image: none !default;
 $logo-name_maxWidth: 300px !default;
 
 $logo-name_backgroundColor: unset !default;
+$logo-name_margin: 0 !default;
 $logo-name_padding:0 !default;
 $logo-name_borderRadius: 0 !default;
 

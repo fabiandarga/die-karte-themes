@@ -11,10 +11,7 @@
     'Stylish',
     sans-serif,
   ),
-  $header_logo_suffix_font: (
-    'Abel',
-    sans-serif,
-  ),
+  $header_logo_suffix_fontSize: 30px,
   $fontColorTitle: #619906,
   $fontColorBody: #ffff,
 
@@ -25,11 +22,12 @@
   $socialMediaActive: #ffff,
 
   /** Module: Header */
-  $logo-name_maxWidth: 300px,
 
   /** Module: Logo Name (as Text) */
+  $logo-name_maxWidth: 300px,
   $logo-name_backgroundColor: #ffff,
   $logo-name_padding: 50px,
+  $logo-name_margin: 20px 0 0,
   $logo-name_borderRadius: 10px,
 
   /** Component: Card  */
