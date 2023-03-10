@@ -7,13 +7,14 @@
      'Oswald', sans-serif,
   ),
   $header_logo_font: (
-    "Monticello",
-    sans-serif,
-  ),
-  $header_logo_suffix_font: (
     "Zeyada",
     cursive,
   ),
+  $header_logo_suffix_font: (
+    "Oswald",
+    sans-serif,
+  ),
+  $app_backgroundColor: #B8CBCC,
 
   $fontColorTitle: #4d301a,
   $fontColorBody: #4d301a,
@@ -22,14 +23,15 @@
   $socialMediaHover: #c09744,
   $socialMediaActive: #4d301a,
   $logo-name_maxWidth: 300px,
+
+  $navigation_link_fontSize: 20px,
+  $navigation_link_fontWeight: bold,
+
+  $logo-name_borderRadius: 10px,
+  $logo-name_margin: 20px,
+  $logo-name_padding: 15px 10px 5px,
 );
 
-@font-face {
-  font-family: "Monticello";
-  src: url("./fonts/monticello-roman-fonts/Monticello LT W01 Roman/Monticello\ LT\ W01\ Roman.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');

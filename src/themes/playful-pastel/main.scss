@@ -4,21 +4,9 @@
 $border-color: #4d301a;
 $card_padding: 20px;
 
-.AppContent {
-  background-color: #B8CBCC;
-}
-
-.App {
-  background-color: #B8CBCC ;
-}
-
-.navbarRoutes {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.heroImage {
-  display: none;
+.logoName {
+  border: 3px solid #f9ecd4;
+  box-shadow: (4px 6px 0 0 transparentize(#c36558, 0.4) inset, 4px 6px 0 0 transparentize(#4d301a, 0.6) ),
 }
 
 .headerContent {
@@ -27,14 +15,6 @@ $card_padding: 20px;
 
   .logoContent {
     margin: 0px;
-
-    div {
-      display: none;
-    } 
-
-    h1 {
-      display: none;
-    }
   }
 }
 
@@ -150,16 +130,6 @@ $card_padding: 20px;
 
 
 @media (min-width: variables.$breakpoint_md) {
-  .App {
-    background-position: center;
-    background-attachment: fixed;
-  }
-  //.page {
-    // border delete
-  //}
-  //.header {
-    // border delete
-  //}
   .logoContent {
     flex-direction: column;
     justify-content: center;

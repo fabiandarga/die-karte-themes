@@ -3,8 +3,6 @@
 $darkGrey: rgba(209, 213, 219, 0.3);
 $fontColorTitle: rgb(26, 26, 127) !default; 
 $fontColorBody: #000 !default;
-$backgroundColor: #ffffff !default; 
-$app_backgroundColor: #2a2929 !default; 
 $fontTitle: Arial, sans-serif !default;
 $fontBody: Arial, sans-serif !default; 
 $descriptionColor: #606060 !default;  
@@ -18,13 +16,14 @@ $margin_xl: 2rem;
 $breakpoint_md: 836px;
 
 /* app */
-$app_background: unset !default;
+$app_backgroundColor: unset !default; 
+$app_background: $app_backgroundColor !default;
 
 /* content */ 
 $content_backgroundColor: unset !default;
 
 /* navigation, footer, additives  */
-$secondary_container_background: $backgroundColor !default;
+$secondary_container_background: unset !default;
 
 /*
 * Components
