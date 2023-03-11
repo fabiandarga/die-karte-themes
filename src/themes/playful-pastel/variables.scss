@@ -16,6 +16,10 @@
   ),
   $app_backgroundColor: #B8CBCC,
 
+  $card_padding: 20px,
+  $card_borderBottom: 10px,
+  $card_shadow: 10px 10px 3px 0px rgb(121 124 126 / 50%),
+
   $fontColorTitle: #4d301a,
   $fontColorBody: #4d301a,
   $item_description_color: #4d301a,
@@ -37,6 +41,7 @@
 
   $additives_background: #F6C3BE,
   $additives_title_margin: 0,
+  
 );
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
