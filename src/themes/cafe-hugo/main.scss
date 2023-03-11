@@ -3,10 +3,6 @@
 @use "./variables.scss";
 @import "../../core/main.scss";
 
-.AppContent {
-  background-image: none;
-}   
-
 .header > * {
  display: flex; 
   flex-direction: column-reverse ; 
