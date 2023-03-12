@@ -17,7 +17,7 @@
   $app_backgroundColor: #B8CBCC,
 
   $card_padding: 20px,
-  $card_borderBottom: 10px,
+  $card_borderRadius: 10px,
   $card_shadow: 10px 10px 3px 0px rgb(121 124 126 / 50%),
 
   $fontColorTitle: #4d301a,
@@ -40,6 +40,7 @@
   $category_title_margin: 0 2rem,
 
   $additives_background: #F6C3BE,
+  $additives_borderRadius: 10px,
   $additives_title_margin: 0,
   
 );
