@@ -17,16 +17,22 @@ function compile(file, themeName) {
         return;
     }
 
-    const compressed = sass.compile(file, { style: 'compressed' });
+    try {
+        const compressed = sass.compile(file, { style: 'compressed' });
+        createFolderIfNotExists('dist/themes/'+themeName);
+        fs.writeFile('dist/themes/'+themeName+'/main.css', compressed.css, {}, (err) => {
+            if (err) {
+                console.log('Error writing: ' + 'dist/themes/'+themeName+'/main.css');
+            } else {
+                console.log('Done writing: ' + 'dist/themes/'+themeName+'/main.css');
+            }
+        });
+    } catch (error) {
+        console.error(`Compiling failed for theme "${themeName}"`, error);
+        return;
+    }
    
-    createFolderIfNotExists('dist/themes/'+themeName);
-    fs.writeFile('dist/themes/'+themeName+'/main.css', compressed.css, {}, (err) => {
-        if (err) {
-            console.log('Error writing: ' + 'dist/themes/'+themeName+'/main.css');
-        } else {
-            console.log('Done writing: ' + 'dist/themes/'+themeName+'/main.css');
-        }
-    });
+    
 }
 
 function copyAssets(themeName, folderName) {

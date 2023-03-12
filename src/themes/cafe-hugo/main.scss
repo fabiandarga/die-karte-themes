@@ -3,10 +3,6 @@
 @use "./variables.scss";
 @import "../../core/main.scss";
 
-.AppContent {
-  background-image: none;
-}   
-
 .header > * {
  display: flex; 
   flex-direction: column-reverse ; 
@@ -29,7 +25,6 @@
 
 
 .imgcontent { 
-  background-color: variables.$backgroundColor;
   width: 100%;
   display: flex;
   justify-content: center;

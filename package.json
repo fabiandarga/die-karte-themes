@@ -6,7 +6,8 @@
   "watch": {
     "build:css": {
       "patterns": ["src/themes", "src/core"],
-      "extensions": "scss"
+      "extensions": "scss",
+      "delay": 500
     }
   },
   "scripts": {

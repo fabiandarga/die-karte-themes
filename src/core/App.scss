@@ -1,18 +1,24 @@
 @use "./variables.scss";
 
 
-.AppContent {
-  background-color: variables.$body_backgroundColor;
+.App {
+  background-color: variables.$app_backgroundColor;
   background: variables.$app_background;
 }
 
-.App {
+.content {
   font-family: variables.$fontBody;
+  background-color: variables.$content_backgroundColor;
 }
 
 .menu_content {
   background-color: variables.$menu_content_backgroundColor;
   color: variables.$fontColorBody;
+  
+  @media (min-width: variables.$breakpoint_md) {
+    border-right: variables.$menu_content_border_right;
+    border-left: variables.$menu_content_border_left;
+  }
 }
 
 $leftColumnWidthMd: 354px;

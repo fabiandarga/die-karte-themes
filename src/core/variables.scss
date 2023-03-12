@@ -3,9 +3,6 @@
 $darkGrey: rgba(209, 213, 219, 0.3);
 $fontColorTitle: rgb(26, 26, 127) !default; 
 $fontColorBody: #000 !default;
-$header_logo_suffix_font:  Arial, sans-serif !default;
-$backgroundColor: #ffffff !default; 
-$body_backgroundColor: #2a2929 !default; 
 $fontTitle: Arial, sans-serif !default;
 $fontBody: Arial, sans-serif !default; 
 $descriptionColor: #606060 !default;  
@@ -16,38 +13,62 @@ $socialMediaActive: black !default;
 $margin: 1rem;
 $margin_lg: 1.5rem;
 $margin_xl: 2rem;
-
 $breakpoint_md: 836px;
 
-$app_background: unset !default;
+/* app */
+$app_backgroundColor: unset !default; 
+$app_background: $app_backgroundColor !default;
+
+/* content */ 
+$content_backgroundColor: unset !default;
 
 /* navigation, footer, additives  */
-$secondary_container_background: $backgroundColor !default;
+$secondary_container_background: unset !default;
 
 /*
 * Components
 */
-$card_margin: 2em !default;
+$card_margin: 2em !default; 
+$card_borderRadius: 0 !default;
+$card_backgroundColor: unset !default;
+$card_padding: 0 !default;
+$card_borderBottom: none !default;
+$card_shadow: none !default;
+
+$arrowBTN_backgroundColor: unset !default;
+$arrowBTN_fontColor: unset !default;
 
 /*
  * Modules
  */
-$header_background: $backgroundColor !default;
+$header_background: unset !default;
 $header_color: $fontColorBody !default;
 $header_logo_color: $fontColorTitle !default;
 $header_logo_font: $fontTitle !default;
 $header_logo_fontSize: 60px !default;
 $header_logo_fontSize_md: 48px !default;
+$header_logo_suffix_font: $header_logo_font !default;
+$header_logo_suffix_fontSize:  20px !default;
+
 $header_hero_image: none !default;
-$header_logo_name_maxWidth: 300px !default;
+$logo-name_maxWidth: 300px !default;
+
+$logo-name_backgroundColor: unset !default;
+$logo-name_margin: 0 !default;
+$logo-name_padding:0 !default;
+$logo-name_borderRadius: 0 !default;
 
 $footer_background: $secondary_container_background !default;
 
 $navigation_arrow_color: black !default;
 $navigation_shadow: none !default;
 $navigation_background: $secondary_container_background !default;
+$navigation_link_fontSize: inherit !default;
+$navigation_link_fontWeight: normal !default;
 
 $menu_content_backgroundColor: unset !default;
+$menu_content_border_right: none !default;
+$menu_content_border_left: none !default;
 
 $category_background: transparent !default;
 $category_margin: 0 !default;
@@ -61,6 +82,7 @@ $category_title_margin: 2em 0 0.6em !default;
 $additives_title_fontSize: 26px !default;
 $additives_title_margin: 2em 0 0.6em !default;
 $additives_background: $secondary_container_background !default;
+$additives_borderRadius: 0 !default;
 
 $item_fontColor: $fontColorBody !default;
 $item_title_fontSize: 18px !default;
@@ -68,7 +90,9 @@ $item_title_fontWeight: 500 !default;
 
 $item_description_margin: 0.5em 1em 0 0 !default;
 $item_description_color: #C2C2C2 !default;
-$item_description_fontSize: 15px !default;  
+$item_description_fontSize: 15px !default;
+
+$item_price_fontColor : #C2C2C2 !default;
 
 $social-media_link_color: $header_color !default;
 $social-media_link_color--hover: color.scale($header_color, $lightness: 15%) !default;

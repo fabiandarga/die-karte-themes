@@ -17,6 +17,7 @@ h1 {
 
 .logoContent div {
   font-family: variables.$header_logo_suffix_font;
+  font-size: variables.$header_logo_suffix_fontSize;
 }
 
 .heroImage {
@@ -28,8 +29,12 @@ h1 {
   color: variables.$header_color;
 }
 
-.logoName span {
-  max-width: variables.$header_logo_name_maxWidth;
+.logoName {
+  max-width: variables.$logo-name_maxWidth;
+  background-color:  variables.$logo-name_backgroundColor;
+  margin: variables.$logo-name_margin;
+  padding: variables.$logo-name_padding;
+  border-radius: variables.$logo-name_borderRadius;
 }
 
 .headerSocialMedia {

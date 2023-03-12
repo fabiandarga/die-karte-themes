@@ -5,12 +5,16 @@
   box-shadow: variables.$navigation_shadow;
 
   color: variables.$fontColorBody;
+
   .navContainerBorder {
     border-top: variables.$borderNavbarTop;
     border-bottom: variables.$borderNavbarBottom;
+
     .navbar-link {
       padding-left: variables.$margin-xl; 
       padding-right: variables.$margin-xl;
+      font-size: variables.$navigation_link_fontSize;
+      font-weight: variables.$navigation_link_fontWeight;
     }
   }
 }
