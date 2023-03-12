@@ -1,0 +1,72 @@
+/**
+ * THEME: Playful Pastel
+ */
+@use "./variables.scss";
+@import "../../core/main.scss";
+
+$card_padding: 20px;
+
+.logoName {
+  border: 3px solid #f9ecd4;
+  box-shadow: (4px 6px 0 0 transparentize(#c36558, 0.4) inset, 4px 6px 0 0 transparentize(#4d301a, 0.6) ),
+}
+
+.card:nth-child(4n+1) {
+  background-color: #F9ECD4;
+  color:#5F321F;
+  .description {
+    color: #5F321F;
+  }
+}
+.card:nth-child(4n+2) {
+  background-color: #5F321F;
+  color: #F9ECD4;
+  .description {
+    color: #F9ECD4;
+  }
+}
+.card:nth-child(4n+3) {
+  background-color: #F6C3BE;
+  color:#5F321F;
+  .description {
+    color: #5F321F;
+  }
+}
+.card:nth-child(4n+4) {
+  background-color: #C36558;
+  color: #F9ECD4;
+  .description {
+    color: #F9ECD4;
+  }
+}
+
+
+.headerSocialMedia a:first-child{
+  color: #F9ECD4;
+}
+
+.headerSocialMedia a:nth-child(2){
+  color: #5F321F;
+}
+
+.headerSocialMedia a:nth-child(3){
+  color: #F6C3BE;
+}
+
+.headerSocialMedia a:nth-child(4){
+  color: #DAB16C;
+}
+.headerSocialMedia a:nth-child(5){
+  color: #C36558;
+}
+
+.navContainer {
+  .navContainerBorder {
+    border-top: 2px solid #5F321F;
+    border-bottom: 2px solid #5F321F;
+  }
+}
+
+.footer {
+  border-top-color: #5F321F;
+}

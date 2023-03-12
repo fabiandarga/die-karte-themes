@@ -2,6 +2,7 @@
 
 .additives {
     background: variables.$additives_background;
+    border-radius: variables.$additives_borderRadius;
     
     h3 {
         font-size: variables.$additives_title_fontSize;
