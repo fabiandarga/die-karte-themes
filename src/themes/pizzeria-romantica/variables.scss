@@ -5,13 +5,14 @@ $bgColor: #0b1511;
 
     $fontColorTitle: #fceab7, 
     $fontColorBody: #FFFFFF,
-    $backgroundColor: $bgColor,
+    $app_background: $bgColor,
     $header_hero_image: (
     linear-gradient(to bottom,
         transparentize($bgColor, 0),
         transparentize($bgColor, 1) 80px,
         transparentize($bgColor, 0)),
-    url("./images/background3.jpg") no-repeat center 0px / 100% fixed)
+    url("./images/background3.jpg") no-repeat center 0px / 100% fixed),
+  $card_borderRadius: 4px,
 );
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');

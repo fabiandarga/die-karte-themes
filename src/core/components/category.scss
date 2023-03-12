@@ -1,9 +1,14 @@
 @use '../variables.scss';
 
-.category_title {
-  font-family: variables.$fontTitle;
-  font-size: variables.$category_title_fontSize;
-  color: variables.$fontColorTitle;
-  margin: variables.$category_title_margin;
+.category { 
+  background: variables.$category_background;
+  padding: 20px 0 10px;
+  margin: 40px 20px 0 20px;
 }
 
+.category_title {
+  font-family: variables.$category_title_fontFamily;
+  font-size: variables.$category_title_fontSize;
+  color: variables.$category_title_color;
+  margin: variables.$category_title_margin;
+}

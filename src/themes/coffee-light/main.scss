@@ -1,0 +1,56 @@
+@use "./variables.scss";
+@use "../../core/utils/decoration.scss";
+@import "../../core/main.scss";
+
+$card_padding: 20px;
+
+.headerContent {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.category_title {
+  width: max-content;
+
+  @include decoration.doubleUnderline(#FFFF);
+}
+
+.foodNameAndDescriptionAndPriceContent {
+  width: 100%;
+  padding-bottom: 0.5em; 
+}
+
+.additives {
+  margin: 30px;
+  padding: 20px 0;
+  border-radius: 5px;
+  background-color: #9d482c68;
+  h3 {
+    margin: 0;
+    color: #FFFF;
+  }
+}
+
+.headerSocialMedia a {
+ color: #9D492C;
+}
+
+.footer {
+  border-top-color: #9D492C;
+}
+
+@media (min-width: variables.$breakpoint_md) {
+  .App {
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .logoContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logoName span {
+    text-align: center;
+  }
+}

@@ -1,0 +1,48 @@
+@forward "../../core/variables.scss" with (
+
+  $fontTitle: (
+    'Pacifico', cursive,
+  ),
+  $fontBody: (
+    'Abel', sans-serif,
+  ),
+  $header_logo_font: (
+    'Pacifico', cursive,
+  ),
+  $header_logo_suffix_font: (
+    'Abel', sans-serif,
+  ),
+
+  $app_background: #ECD0A0,
+  $fontColorTitle: #9D492C,
+  $fontColorBody: #532415,
+  
+  $item_description_fontSize: 16px,
+  $item_title_fontWeight: 600,
+
+  $logo-name_maxWidth: 300px,
+  
+  $category_title_fontSize: 30px,
+  $category_title_margin: 0 auto,
+
+  $navigation_link_fontSize: 20px,
+  $navigation_link_fontWeight: bold,
+  $navigation_borderColor: #9D492C,
+  $navigation_background: #ECD0A0,
+  
+  //card 
+  $card_padding: 0,
+  $card_margin: 20px 2rm 0 2rm,
+  $card_borderBottom: 2px solid #9D492C,
+  
+  // arrowButton
+  $arrowBTN_backgroundColor: transparent,
+  $arrowBTN_fontColor: #9D492C,
+  
+  $socialMediaHover: #FFFF,
+  $socialMediaActive: #9D492C,
+
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');

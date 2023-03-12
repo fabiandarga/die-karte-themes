@@ -1,0 +1,42 @@
+/**
+ * THEME: Playful Pastel
+ */
+@use "./variables.scss";
+@use "../../core/utils/repeater.scss";
+@import "../../core/main.scss";
+
+$card_padding: 20px;
+
+.logoName {
+  border: 3px solid #f9ecd4;
+  box-shadow: (4px 6px 0 0 transparentize(#c36558, 0.4) inset, 4px 6px 0 0 transparentize(#4d301a, 0.6) ),
+}
+
+.category_items .card {
+  @include repeater.nthVariations((background-color, color),
+    (
+      (#F9ECD4, #5F321F),
+      (#F6C3BE, #5F321F),
+      (#C36558, #F9ECD4),
+      (#5F321F, #F9ECD4)
+    ));
+
+  .description, .price {
+    color: inherit;
+  }
+}
+
+.headerSocialMedia a {
+  @include repeater.nthVariations((color), (#F9ECD4, #5F321F, #F6C3BE, #DAB16C, #C36558));
+}
+
+.navContainer {
+  .navContainerBorder {
+    border-top: 2px solid #5F321F;
+    border-bottom: 2px solid #5F321F;
+  }
+}
+
+.footer {
+  border-top-color: #5F321F;
+}

@@ -1,0 +1,50 @@
+@forward "../../core/variables.scss" with (
+
+  $fontTitle: (
+    'Zeyada', cursive,
+  ),
+  $fontBody: (
+     'Oswald', sans-serif,
+  ),
+  $header_logo_font: (
+    "Zeyada",
+    cursive,
+  ),
+  $header_logo_suffix_font: (
+    "Oswald",
+    sans-serif,
+  ),
+  $app_backgroundColor: #B8CBCC,
+
+  $card_padding: 20px,
+  $card_borderRadius: 10px,
+  $card_shadow: 10px 10px 3px 0px rgb(121 124 126 / 50%),
+
+  $fontColorTitle: #4d301a,
+  $fontColorBody: #4d301a,
+  $item_description_color: #4d301a,
+  $socialMediaHover: #c09744,
+  $socialMediaActive: #4d301a,
+  $logo-name_maxWidth: 300px,
+  
+  
+  $navigation_link_fontSize: 20px,
+  $navigation_link_fontWeight: bold,
+  $navigation_background: #B8CBCC,
+  
+  $logo-name_borderRadius: 10px,
+  $logo-name_margin: 20px,
+  $logo-name_padding: 15px 10px 5px,
+  
+  $category_title_fontSize: 48px,
+  $category_title_margin: 0 2rem,
+
+  $additives_background: #F6C3BE,
+  $additives_borderRadius: 10px,
+  $additives_title_margin: 0,
+  
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
