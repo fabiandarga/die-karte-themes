@@ -7,8 +7,8 @@
   color: variables.$fontColorBody;
 
   .navContainerBorder {
-    border-top: variables.$borderNavbarTop;
-    border-bottom: variables.$borderNavbarBottom;
+    border-top: variables.$navigation_border;
+    border-bottom: variables.$navigation_border;
 
     .navbar-link {
       padding-left: variables.$margin-xl; 

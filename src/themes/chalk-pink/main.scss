@@ -1,4 +1,6 @@
 @use "./variables.scss";
+@use "../../core/utils/decoration.scss";
+
 @import "../../core/main.scss";
 
 $strokeColor: #fff;
@@ -11,29 +13,8 @@ $card_padding: 20px;
 
 .category_title {
   width: max-content;
-  margin: 0 auto;
-  font-weight: bolder;
-}
 
-.category_title {
-  &::after, &::before {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 3px;
-    background-color: $strokeColor;
-  }
-}
-
-.category_title::after {
-  left: 23px;
-}
-
-.category_title::before {
-  bottom: -68px;
-  left: -30px;
-  width: 80%;
+  @include decoration.doubleUnderline(#FFFF);
 }
 
 .navContainer {
@@ -54,10 +35,6 @@ $card_padding: 20px;
     margin: 0;
     color: #FFFF;
   }
-}
-
-.price {
-  font-weight: bold;
 }
 
 .description {
