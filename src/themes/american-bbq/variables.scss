@@ -1,39 +1,56 @@
+$red: #BF0D3E;
+$blue: #041E42;
+$white: #fff;
+
 @forward "../../core/variables.scss" with (
 
   $fontTitle: (
-    'Luckiest Guy', cursive,
+    'Smokum', cursive,
   ),
   $fontBody: (
-    'Abel', sans-serif,
+    'Raleway', sans-serif,
   ),
   $header_logo_font: (
     'Luckiest Guy', cursive,
   ),
   $header_logo_suffix_font: (
-    'Abel', sans-serif,
+    'Raleway', sans-serif,
   ),
 
-  $fontColorTitle: #F2DFAB,
+  $app_backgroundColor: #221316,
+
   $fontColorBody: #F2DFAB,
-  $category_title_fontSize: 26px,
-  $item_description_color: #F2DFAB,
-  $socialMediaHover: #CD2F2E,
-  $socialMediaActive: #FFFF,
+  $socialMediaHover: $red,
+  $socialMediaActive: $white,
   $logo-name_maxWidth: 300px,
+  
   // Content
   $content_backgroundColor: transparent,
-
+  
   // Header
   $header_borderLeft: 2px solid #C27F40,
+  $header_logo_color: #F2DFAB,
+  
+  
+  $category_title_fontSize: 32px,
+  $category_title_color: #F2DFAB,
+  $category_title_margin: 20px,
+
+  $additives_border: 2px solid $red,
+  $additives_borderRadius: 5px,
   
   //card 
   $card_padding: 0,
   $card_margin: 10px 1em 0 1em,
-  $card_borderBottom: 2px solid #CD2F2E,
+  $card_borderBottom: 2px solid $red,
+  
   // arrowButton
   $arrowBTN_backgroundColor: transparent,
   $arrowBTN_fontColor: #C27F40,
 );
 
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Smokum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
