@@ -1,0 +1,15 @@
+@use 'sass:list';
+
+@mixin nthVariations($properties, $values) {
+    $values_len: list.length($values);
+    @for $v from 1 through $values_len {
+        $currentValues: list.nth($values, $v);
+
+        &:nth-child(#{$values_len}n+#{$v}) {
+            // child #{$v}
+            @for $p from 1 through list.length($properties) {
+                #{list.nth($properties, $p)}: list.nth($currentValues, $p)
+            }
+        }
+    }
+}

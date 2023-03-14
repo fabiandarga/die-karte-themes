@@ -1,0 +1,59 @@
+@use "./variables.scss";
+@use "../../core/utils/decoration.scss";
+
+@import "../../core/main.scss";
+
+$strokeColor: #fff;
+$card_padding: 20px;
+
+.headerContent {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.category_title {
+  width: max-content;
+
+  @include decoration.doubleUnderline(#FFFF);
+}
+
+.navContainer {
+  background: url("./images/background.JPG");
+
+  .navContainerBorder {
+    border-top: 2px solid variables.$borderColor;
+    border-bottom: 2px solid variables.$borderColor;
+  }
+}
+
+.additives {
+  margin: 30px;
+  padding: 20px 0;
+  border-radius: 5px;
+  background-color: transparentize($color: variables.$primaryColor, $amount: 0.64);
+  h3 {
+    margin: 0;
+    color: #FFFF;
+  }
+}
+
+.description {
+  margin-bottom: 0.5em;
+}
+
+.footer {
+  border-top-color: variables.$borderColor;
+}
+
+
+@media (min-width: variables.$breakpoint_md) {
+  .logoContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logoName span {
+    text-align: center;
+  }
+}
