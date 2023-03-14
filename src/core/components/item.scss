@@ -6,6 +6,7 @@
 }
 
 .foodName {
+  color: variables.$item_title_fontColor;
   font-size: variables.$item_title_fontSize;
   font-weight: variables.$item_title_fontWeight;
 }

@@ -1,0 +1,8 @@
+@use "../variables.scss";
+
+.downArrow {
+    // Not showing this is the default
+    @if (variables.$feature_showMoreArrow == false) {
+        display: none;
+    }
+}
