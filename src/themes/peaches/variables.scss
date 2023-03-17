@@ -1,0 +1,43 @@
+$montserrat: ( 'Montserrat', sans-serif );
+$primary: #D9476F;
+$background: #E9CEB4;
+
+@forward "../../core/variables.scss" with (
+
+  $fontTitle: $montserrat,
+  $fontBody: $montserrat,
+  $header_logo_font: $montserrat,
+  $header_logo_suffix_font: $montserrat,
+
+  $base_borderColor: #1F3244,
+
+  $app_backgroundColor: $background,
+
+  $fontColorTitle: #1F3244,
+  $fontColorBody: #3c3c3c,
+  $socialMediaHover: #1F3244,
+  $socialMediaActive: #FFFF,
+  
+
+  $category_title_fontSize: 30px,
+  $category_margin: 40px 30px 0,
+
+  $item_title_fontColor: $primary,
+  
+  //card 
+  $card_borderRadius : 10px,
+  $card_backgroundColor: #FFFF,
+  $card_padding: 20px,
+  $card_shadow: 6px 5px 6px 0px rgba(0,0,0,0.2),
+
+  // arrowButton
+  $arrowBTN_backgroundColor: transparent,
+  $arrowBTN_fontColor: #1F3244,
+
+  $navigation_link_fontSize: 20px,
+  $navigation_link_fontWeight: bold,
+  $navigation_fontColor: #D9476F,
+  $navigation_background: $background,
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');

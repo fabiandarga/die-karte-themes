@@ -3,7 +3,7 @@
 .category { 
   background: variables.$category_background;
   padding: 20px 0 10px;
-  margin: 40px 20px 0 20px;
+  margin: variables.$category_margin;
 }
 
 .category_title {

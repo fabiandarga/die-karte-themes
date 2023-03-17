@@ -1,6 +1,6 @@
 @use 'sass:color';
 
-$base_borderColor: #000;
+$base_borderColor: #000 !default;
 
 $darkGrey: rgba(209, 213, 219, 0.3);
 $fontColorTitle: rgb(26, 26, 127) !default; 
@@ -28,7 +28,7 @@ $secondary_container_background: unset !default;
 /*
 * Components
 */
-$card_margin: 2em !default; 
+$card_margin: 2em 0 !default; 
 $card_borderRadius: 0 !default;
 $card_backgroundColor: unset !default;
 $card_padding: 0 !default;
@@ -60,6 +60,7 @@ $logo-name_borderRadius: 0 !default;
 
 $footer_background: $secondary_container_background !default;
 
+$navigation_fontColor: inherit !default;
 $navigation_arrow_color: black !default;
 $navigation_borderColor: $base_borderColor !default;
 $navigation_border: 2px solid $navigation_borderColor !default;
@@ -79,23 +80,24 @@ $category_padding: 0 !default;
 $category_title_fontFamily: $fontTitle !default;
 $category_title_color: $fontColorTitle !default;
 $category_title_fontSize: 32px !default;
-$category_title_margin: 2em 0 0.6em !default;
+$category_title_margin: 0 !default;
 
 $additives_title_fontSize: 26px !default;
-$additives_title_margin: 2em 0 0.6em !default;
+$additives_title_margin: 0 !default;
 $additives_background: $secondary_container_background !default;
 $additives_borderRadius: 0 !default;
 
 $item_fontColor: $fontColorBody !default;
+$item_title_fontColor: inherit !default;
 $item_title_fontSize: 18px !default;
 $item_title_fontWeight: 500 !default;
-
 $item_description_margin: 0.5em 1em 0 0 !default;
 $item_description_color: inherit !default;
 $item_description_fontSize: 15px !default;
-
-$item_price_fontColor : inherit !default;
+$item_price_fontColor : $item_title_fontColor !default;
 
 $social-media_link_color: $header_color !default;
 $social-media_link_color--hover: color.scale($header_color, $lightness: 15%) !default;
 $social-media_link_color--active: color.scale($header_color, $lightness: 30%) !default;
+
+$feature_showMoreArrow: false !default;

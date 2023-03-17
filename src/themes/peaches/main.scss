@@ -1,0 +1,41 @@
+@use "./variables.scss";
+@import "../../core/main.scss";
+
+$card_padding: 20px;
+
+.category_title {
+  text-align: left;
+  width: max-content;
+  border-bottom: 3px solid variables.$primary;
+}
+
+.additives {
+  margin: 0 30px 30px 30px;
+  padding: 20px 0;
+  border-radius: 5px;
+  border: 1px solid variables.$primary;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.footer {
+  border-top-color: #D9476F;
+}
+
+
+@media (min-width: variables.$breakpoint_md) {
+  .App {
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .logoContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logoName span {
+    text-align: center;
+  }
+}
